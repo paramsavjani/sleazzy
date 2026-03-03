@@ -8,9 +8,9 @@ export default defineConfig(({ mode }) => {
     const isProduction = process.env.NODE_ENV === 'production' || mode === 'production';
     
     return {
-      base: isProduction ? '/sleazzy/' : '/',
+      base: '/',
       server: {
-        port: 3000,
+        port: 3005,
         host: 'localhost',
       },
       plugins: [react(), tailwindcss()],
